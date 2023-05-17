@@ -1,0 +1,108 @@
+.Main{
+margin: 0 auto;
+height: 40rem;
+display: flex;
+padding: 50px;
+max-width: 80rem;
+flex-direction: column;
+}
+.Main-container{
+  width: 100%;
+}
+.title{
+  margin-bottom: 20px;
+  text-align: center;
+}
+.form-action{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    color: #000;
+}
+.form-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 160px;
+    color: #000;
+  }
+  
+  .form-item label {
+    width: 300px;
+  }
+  .form-item .input_text{
+    padding: 10px;
+    width: 300px;
+  }
+  .form-item select{
+    width: 300px;
+    padding: 10px;
+  }
+  .form-item,input,select:focus{
+    outline: none;
+  }
+  .radio-btn{
+    margin: 0 10px;
+  }
+  .btn{
+    max-width: 20rem;
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 30px auto;
+    background: #20c1bf;
+    color: #fff;
+    font-size: 1.25rem;
+    border: none;
+    cursor: pointer;
+  }
+  @media screen and (max-width:875px) {
+    .form-item {
+      display: block;
+      align-items: center;
+      margin: 10px 160px;
+    }
+    .form-item .input_text{
+      padding: 10px;
+      width: 100%;
+    }
+    .form-item label {
+      width: 0px;
+    }
+    .form-item select{
+      width: 100%;
+      padding: 10px;
+    }
+    .radio-btn{
+      margin: 0px 10px 0px 0px;
+    }
+    .form-item span {
+      margin-right: 10px;
+    }
+  }
+
+  @media screen and (max-width:599px) {
+    .form-item {
+      display: block;
+      margin: 10px 0px;
+    }
+    .form-item .input_text{
+      padding: 10px;
+      width: 100%;
+    }
+    .form-item label {
+      width: 0px;
+    }
+    .form-item select{
+      width: 100%;
+      padding: 10px;
+    }
+    .radio-btn{
+      margin: 0px 10px 0px 0px;
+    }
+    .form-item span {
+      margin-right: 10px;
+    }
+  }
