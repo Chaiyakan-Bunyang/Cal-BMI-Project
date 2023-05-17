@@ -14,6 +14,16 @@
 .Bmi.Red{
     color: red;
 }
-.Bmi.Yellow{
-    color: yellow;
+.Bmi.Orange{
+    color: orange;
 }
+.Bmi.Yellow{
+    color: rgb(255, 230, 0);
+}
+.Bmi.Green{
+    color: greenyellow;
+}
+.Bmi.LightGreen{
+    color: aquamarine;
+}
+
