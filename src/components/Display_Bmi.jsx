@@ -11,7 +11,16 @@ export default function Display_Bmi(props){
                sColor('Red')
             }
             else if (c_type==="อ้วน"){
+                sColor('Orange')
+            }
+            else if (c_type==="ท้วม"){
                 sColor('Yellow')
+            }
+            else if (c_type==="ปกติ"){
+                sColor('Green')
+            }
+            else if (c_type==="ผอมมาก"){
+                sColor('LightGreen')
             }
         },[bmi]);
 
