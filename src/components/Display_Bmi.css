@@ -1,15 +1,48 @@
 .Display_Bmi_Container{
     width: 100%;
-    height: 30rem;
-    padding: 50px;
+    padding: 30px;
     border-radius: 5px;
     box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
     display: flex;
-    text-align: center;
-    flex-direction: column;
+    justify-content: space-around;
     margin-top: 20px;
-    background: #fff;
+    align-items: center;
     color: #000;
+    display: none;
+}
+.Display_Bmi_Container.Show{
+    width: 100%;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    align-items: center;
+    color: #000;
+    display: flex;
+}
+.username{
+    font-size: 2.3rem;
+    color: rgb(246, 96, 2);
+}
+.inline{
+    display: inline;
+}
+.User_IMG{
+    width: 250px;
+    height: 250px;
+}
+.Bmi-Container-Right{
+    width: 23rem;
+    display: inline-flex; 
+}
+.Bmi-Container-Left{
+   border:red dotted;
+   border-radius: 5px;
+   padding: 5px;
+   margin-left: 100px;
+
 }
 .Bmi.Red{
     color: red;
