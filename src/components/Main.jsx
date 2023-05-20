@@ -46,9 +46,9 @@ export default function Main() {
           <div className="form-item">
             <label>เพศ:</label>
             <div>
-                <input type="radio" className="radio-btn" name="gender" checked value={"ชาย"} onChange={(e)=>setGender(e.target.value)}/>
+                <input type="radio" className="radio-btn" name="gender"  value={"ชาย"} onClick={(e)=>setGender(e.target.value)}/>
                 <span>ชาย</span>
-                <input type="radio" className="radio-btn" name="gender" value={"หญิง"} onChange={(e)=>setGender(e.target.value)}/>
+                <input type="radio" className="radio-btn" name="gender" value={"หญิง"} onClick={(e)=>setGender(e.target.value)}/>
                 <span>หญิง</span>
             </div>
           </div>

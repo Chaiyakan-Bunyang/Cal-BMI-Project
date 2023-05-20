@@ -5,6 +5,7 @@ export default function Display_Bmi(props) {
   const { bmi, cal_bmi, type, setType, uname
   ,uheight,uweight,uage,ugender } = props;
   const [display,setDisplay] = useState();
+  const [userimg,setUserimg] = useState();
   const [scolor, sColor] = useState();
   useEffect(() => {
     const c_type = check_type(bmi);
@@ -23,7 +24,20 @@ export default function Display_Bmi(props) {
         setDisplay("Show")
       }
 
+     
   }, [bmi]);
+
+  useEffect(()=>{
+    if(ugender==="ชาย"){
+      setUserimg("Man")
+    }
+    else if(ugender==="หญิง"){
+      setUserimg("Woman")
+    }
+    else{
+      setUserimg("No-IMG")
+    }
+  },[ugender])
 
 
 
@@ -46,10 +60,10 @@ export default function Display_Bmi(props) {
   return (
     <div className={"Display_Bmi_Container "+display}>
       <div className="Bmi-Container-Left">
-        <img src="./IMG/man.png" alt="" className="User_IMG" />
+        <div alt="" className={"User_IMG "+userimg} />
       </div>
       <div className="Bmi-Container-Right">
-        <div>
+        <div className="container-item">
           <h2 className="username">{uname}</h2>
           <h2>เพศ {ugender} </h2>
           <h2>อายุ {uage} ปี </h2>
