@@ -1,15 +1,15 @@
 import { useState } from "react";
 import Display_Bmi from "./Display_Bmi";
 import "./Main.css";
-
+import Share from "./Share";
 export default function Main() {
   const [height,setHeight] = useState("");
   const [weight,setWeight] = useState("");
   const [age,setAge] = useState("");
-  const [bmi,setBmi]=useState("");
+  const [bmi,setBmi]=useState();
   const [type,setType] = useState("");
   const [name,setName] = useState("");
-  const [gender,setGender] = useState("");
+  const [gender,setGender] = useState();
 
   const [uname,setUname] = useState();
   const [uheight,setUheight] = useState();
@@ -23,12 +23,20 @@ export default function Main() {
     /*setAge(userage.value);
     setHeight(userheiht.value);
     setWeight(userweight.value); */
+
     setUname(name);
     setUheight(height);
     setUweight(weight);
     setUage(age);
     setUgender(gender);
   }
+
+  const convertComponentToImage = async (componentRef) =>{
+    const canvas = await html2canvas(componentRef);
+    return canvas.toDataURL('image/png');
+  }
+
+  
   return (
     <div className="Main">
       <div className="Main-container">

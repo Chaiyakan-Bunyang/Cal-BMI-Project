@@ -7,6 +7,7 @@ import Main from './components/Main'
 import Footer from './components/Footer'
 import Display_Bmi from './components/Display_Bmi'
 
+
 function App() {
 
   const[theme,setTheme] =useState('light');
