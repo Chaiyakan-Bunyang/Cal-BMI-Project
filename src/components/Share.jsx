@@ -9,7 +9,7 @@ export default function Share(props){
     return(
         <div>
     <FacebookProvider appId="3370247446559346">
-      <ShareButton quote="Check out this image" href={"https://646998a13e59cb2ce94c3573--jovial-granita-e72e95.netlify.app/"}>
+      <ShareButton quote="Check out this image" href={"https://mellow-begonia-0eca77.netlify.app/"}>
         <FacebookMessengerIcon style={{ opacity: '0.5' }} size={18} />
       </ShareButton>
     </FacebookProvider>
