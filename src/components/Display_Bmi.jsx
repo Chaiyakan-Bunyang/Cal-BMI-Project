@@ -107,8 +107,8 @@ export default function Display_Bmi(props) {
       </div>
     </div>
     {imgUrl && <img src={imgUrl} alt="Converted Image" />}
-    <button onClick={handleShareImage}>แปลงเป็นรูปภาพและแชร์</button>
-    <Share imgUrl={imgUrl}/>
+    {/* <button onClick={handleShareImage}>แปลงเป็นรูปภาพและแชร์</button>
+    <Share imgUrl={imgUrl}/> */} 
     </>
   );
 }
